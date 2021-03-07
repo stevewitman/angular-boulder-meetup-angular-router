@@ -1,5 +1,6 @@
 <div class="container">
-  <h1 class="section">Varieties of {{ category.description | titlecase }}</h1>
+  <!-- <h1 class="section">Varieties of {{ category.description | uppercase }}</h1> -->
+  <h1 class="section">Varieties of {{ category.description | snakeToTitle }}</h1>
 </div>
 
 <!-- </ng-container> -->

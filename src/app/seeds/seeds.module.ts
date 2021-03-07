@@ -7,10 +7,11 @@ import { CategoriesCardListComponent } from './categories-card-list/categories-c
 import { SeedsService } from './services/seeds.service';
 import { VarietiesListComponent } from './varieties-list/varieties-list.component';
 import { CategoryVarietiesComponent } from './category-varieties/category-varieties.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [SeedsPageComponent, CategoriesCardListComponent, VarietiesListComponent, CategoryVarietiesComponent],
-  imports: [CommonModule, SeedsRoutingModule],
+  imports: [CommonModule, SeedsRoutingModule, SharedModule],
   exports: [SeedsPageComponent],
   providers: [SeedsService],
 })

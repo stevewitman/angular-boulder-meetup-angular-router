@@ -1,17 +1,3 @@
-// export const COURSES: any = {
-//   18: {
-//     id: 18,
-//     description: 'Angular Router In Depth',
-//     longDescription: 'Build large-scale Single Page Applications with the powerful Angular Router',
-//     iconUrl: 'https://angular-university.s3-us-west-1.amazonaws.com/course-images/angular-router-course.jpg',
-//     courseListIcon: 'https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png',
-//     category: 'BEGINNER',
-//     lessonsCount: 10,
-//     seqNo: 0,
-//     url: 'angular-router-course',
-//     price: 50
-//   }
-// };
 export const CATEGORIES: any = {
   10: {
     id: 10,
@@ -86,43 +72,19 @@ export const CATEGORIES: any = {
     seedGroup: 'vegetable'
   },
 };
-// export const LESSONS = {
-//   // Security Course
-//   2: {
-//     id: 2,
-//     description: 'Building Your First  Component - Component Composition',
-//     duration: '2:07',
-//     seqNo: 2,
-//     courseId: 5,
-//   },
-//   // Security Course
-//   11: {
-//     id: 11,
-//     description: 'Course Helicopter View',
-//     duration: '08:19',
-//     seqNo: 1,
-//     courseId: 6,
-//   },
-// };
-// keystone_giant_bell_pepper
-// carrots,
-// cucumbers,
-// lettuce,
-// onions,
-// peas,
-// peppers,
-// spinach,
-// tomatoes,
+
+// *********************************************************************************
+// *********************************************************************************
+// *********************************************************************************
+// *********************************************************************************
+// *********************************************************************************
+// *********************************************************************************
+// *********************************************************************************
+// *********************************************************************************
+// *********************************************************************************
+// *********************************************************************************
+
 export const SEEDS = {
-  // Carrots
-  // 1: {
-  //   id: 1,
-  //   description:
-  //     'Angular Tutorial For Beginners - Build Your First App - Hello World Step By Step',
-  //   duration: '4:17',
-  //   seqNo: 1,
-  //   category: 'carrots',
-  // },
   101: {
     id: 101,
     category: 10,
@@ -184,7 +146,7 @@ export const SEEDS = {
   201: {
     id: 201,
     category: 20,
-    variety: 'Ashley Cucumber',
+    variety: 'ashley_cucumber',
     img_thumb: 'ashley_cucumber_small.jpg',
     img_full: 'ashley_cucumber_large.jpg',
     seed_count: 50,
@@ -198,7 +160,7 @@ export const SEEDS = {
   202: {
     id: 202,
     category: 20,
-    variety: 'Homemade Pickles Cucumber',
+    variety: 'homemade_pickles_cucumber',
     img_thumb: 'homemade_pickles_cucumber_small.jpg',
     img_full: 'homemade_pickles_cucumber_large.jpg',
     seed_count: 25,
@@ -212,7 +174,7 @@ export const SEEDS = {
   203: {
     id: 203,
     category: 20,
-    variety: 'Marketmore 76 Cucumber',
+    variety: 'marketmore_76_cucumber',
     img_thumb: 'marketmore_76_cucumber_small.jpg',
     img_full: 'marketmore_76_cucumber_large.jpg',
     seed_count: 500,
@@ -226,7 +188,7 @@ export const SEEDS = {
   204: {
     id: 204,
     category: 20,
-    variety: 'Spacemaster 80 Cucumber',
+    variety: 'spacemaster_80_cucumber',
     img_thumb: 'spacemaster_80_cucumber_small.jpg',
     img_full: 'spacemaster_80_cucumber_large.jpg',
     seed_count: 700,
