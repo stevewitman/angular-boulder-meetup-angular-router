@@ -1,0 +1,11 @@
+<div class="header">
+  <a class="logo" [routerLink]="['home']">GARDENING</a>
+  <nav>
+    <ul class="nav-links">
+      <li><a [routerLink]="['seeds']" routerLinkActive="router-link-active">SEEDS</a></li>
+      <li><a [routerLink]="['videos']" routerLinkActive="router-link-active">VIDEOS</a></li>
+      <li><a [routerLink]="['/orders']" routerLinkActive="router-link-active">ORDERS</a></li>
+    </ul>
+  </nav>
+  <a class="login" [routerLink]="['/seeds']" class="login">SIGN IN</a>
+</div>

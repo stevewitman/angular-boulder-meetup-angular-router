@@ -1,0 +1,15 @@
+<div class="container">
+  <h1 class="section">Your Orders</h1>
+  <div class="card">
+    <div class="card-header">
+      <h5>ORDER PLACED</h5>
+      <h5>{{order.date_placed}}</h5>
+    </div>
+    <div class="card-content">
+      <h4 class="delivered">DELIVERED: {{order.date_delivered}}</h4>
+      <div *ngFor="let item of order.order_items">
+        <app-line-item [item]="item"></app-line-item>
+      </div>
+    </div>
+  </div>
+</div>

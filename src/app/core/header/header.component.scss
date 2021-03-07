@@ -1,0 +1,38 @@
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 3px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  width: 100vw;
+  position: fixed;
+  font-size: 1.33rem;
+  background-color: green;
+  z-index: 2;
+}
+.logo {
+  font-size: 2.4rem;
+}
+.nav-links {
+  list-style: none;
+  position: relative;
+  li {
+    display: inline-block;
+    padding: 0px 20px;
+  }
+  li a:hover {
+    color: yellow;
+  }
+}
+.router-link-active {
+  border-bottom: 2px solid yellow;
+  transition-duration: 0.2s;
+}

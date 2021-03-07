@@ -1,0 +1,29 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-bottom: 75px;
+}
+.card {
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.card-header {
+  border-bottom: 1px solid gray;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 15px;
+  background-color: rgb(219, 220, 220);
+  line-height: 20px;
+}
+.card-content {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #ffffff;
+  padding: 15px;
+}
+.section {
+  padding-bottom: 20px;
+}
+.delivered {
+  padding-bottom: 10px;
+}

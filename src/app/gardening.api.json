@@ -1,0 +1,77 @@
+{
+  "seeds": [
+    {
+      "id": 101,
+      "category": "carrots",
+      "variety": "little_fingers_carrot",
+      "img_thumb": "little_fingers_carrot_small.jpg",
+      "img_full": "little_fingers_carrot_large.jpg",
+      "seed_count": 500,
+      "days_to_maturity": 55,
+      "light": "Full & Partial Sun",
+      "description": "Developed in France. This baby-type variety has a deep orange color perfect for canning or pickling. 3-4″ long. The sweetest carrot in the world and the perfect snack fresh from the garden!",
+      "price": 2.00
+    },
+    {
+      "id": 102,
+      "category": "carrots",
+      "variety": "imperator_58_carrot",
+      "img_thumb": "imperator_58_carrot_small.jpg",
+      "img_full": "imperator_58_carrot_large.jpg",
+      "seed_count": 1000,
+      "days_to_maturity": 70,
+      "light": "Full & Partial Sun",
+      "description": "A super long and slender carrot that would make Bugs Bunny happy! Sweet and crisp and delicious for kids lunches, and even deep containers if you have them available. 9″ long and 1″ to 1 1/1″ wide. Performs best in loose soil.",
+      "price": 2.00
+    },
+    {
+      "id": 103,
+      "category": "carrots",
+      "variety": "danvers_126_carrot",
+      "img_thumb": "danvers_126_carrot_small.jpg",
+      "img_full": "danvers_126_carrot_large.jpg",
+      "seed_count": 500,
+      "days_to_maturity": 70,
+      "light": "Full & Partial Sun",
+      "description": "Bright orange conical roots with rugged tops, strong. Perfect for heavy soil! Versatile variety for canning, freezing, storing, and carrot juice. Resists splitting. Make an ABC juice with this carrot, one apple, 1/4 of a beet and 1 carrot – nutrient packed and tasty!",
+      "price": 2.00
+    },
+    {
+      "id": 104,
+      "category": "carrots",
+      "variety": "scarlet_nantes_carrot",
+      "img_thumb": "scarlet_nantes_carrot_small.jpg",
+      "img_full": "scarlet_nantes_carrot_large.jpg",
+      "seed_count": 700,
+      "days_to_maturity": 65,
+      "light": "Full & Partial Sun",
+      "description": "This carrot is one of the most popular carrots for home gardeners and market gardeners alike. Consistent 6-7 inch roots, consistent shape, and a sweet flavor makes great for fresh eating or long storage.",
+      "price": 2.00
+    }
+  ],
+  "orders": [
+    {
+      "order_number": 1001,
+      "date_placed": "March 25, 2021",
+      "date_delivered":  "March 29, 2021",
+      "order_items": [
+        {
+          "item_number": 101,
+          "quantity": 2
+        },
+        {
+          "item_number": 102,
+          "quantity": 1
+        },
+        {
+          "item_number": 103,
+          "quantity": 4
+        },
+        {
+          "item_number": 103,
+          "quantity": 4
+        }
+      ]
+    }
+  ]
+}

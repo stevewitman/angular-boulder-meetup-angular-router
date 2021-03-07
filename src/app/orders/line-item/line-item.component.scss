@@ -1,0 +1,21 @@
+a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #0645AD;
+  text-decoration: none;
+}
+.line-item {
+  padding: 8px 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.item-thumb {
+  height: 96px;
+  padding-right: 20px;
+}
+.item-details {
+  line-height: 1.5;
+}
+.quantity {
+  color: #888888;
+}
