@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VarietiesListComponent } from './varieties-list.component';
+import { VarietyDetailComponent } from './variety-detail.component';
 
-describe('VarietiesListComponent', () => {
-  let component: VarietiesListComponent;
-  let fixture: ComponentFixture<VarietiesListComponent>;
+describe('VarietyDetailComponent', () => {
+  let component: VarietyDetailComponent;
+  let fixture: ComponentFixture<VarietyDetailComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ VarietiesListComponent ]
+      declarations: [ VarietyDetailComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(VarietiesListComponent);
+    fixture = TestBed.createComponent(VarietyDetailComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

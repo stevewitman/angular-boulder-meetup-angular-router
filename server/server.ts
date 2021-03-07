@@ -1,7 +1,7 @@
 import * as express from 'express';
 import {Application} from "express";
 import {getAllCategories, getCategoryByUrl} from "./get-categories.route";
-// import {searchLessons} from "./search-lessons.route";
+import {searchVarieties} from "./search-varieties.route";
 // import {saveCourse} from './save-course.route';
 import {loginUser} from './login.route';
 // import {findLessonDetail} from "./get-lesson-detail.route";
@@ -16,7 +16,7 @@ app.route('/api/categories').get(getAllCategories);
 
 app.route('/api/categories/:id').get(getCategoryByUrl);
 
-// app.route('/api/lessons').get(searchLessons);
+app.route('/api/varieties').get(searchVarieties);
 
 // app.route('/api/courses/:id').put(saveCourse);
 

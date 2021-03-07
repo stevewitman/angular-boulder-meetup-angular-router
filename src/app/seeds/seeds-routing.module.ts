@@ -3,6 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { CategoryVarietiesComponent } from './category-varieties/category-varieties.component';
 import { SeedsPageComponent } from './seeds-page/seeds-page.component';
 import { CategoryResolver } from './services/category.resolver';
+import { VarietiesResolver } from './services/varieties.resolver';
+import { VarietyDetailComponent } from './variety-detail/variety-detail.component';
+import { VarietyListComponent } from './variety-list/variety-list.component';
 
 const routes: Routes = [
   {
@@ -12,6 +15,19 @@ const routes: Routes = [
   {
     path: ':categoryUrl',
     component: CategoryVarietiesComponent,
+    children: [
+      {
+        path: '',
+        component: VarietyListComponent,
+        resolve: {
+          varieties: VarietiesResolver
+        }
+      },
+      {
+        path: 'varieties/:variety',
+        component: VarietyDetailComponent
+      }
+    ],
     resolve: {
       category: CategoryResolver,
     },
@@ -21,6 +37,6 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
-  providers: [CategoryResolver]
+  providers: [CategoryResolver, VarietiesResolver],
 })
-export class SeedsRoutingModule { }
+export class SeedsRoutingModule {}

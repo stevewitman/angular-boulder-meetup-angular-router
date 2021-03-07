@@ -1,0 +1,10 @@
+<div class="variety-card" *ngFor="let variety of varieties">
+  <div class="card-title">
+    <h2>{{ variety.variety | snakeToTitle }}</h2>
+  </div>
+  <img src="assets/images/seeds/{{ variety.img_small }}" />
+  <div class="card-info">
+    <a [routerLink]="['/seeds']" routerLinkActive="router-link-active"  class="button1 button-details">MORE DETAILS</a>
+    <a [routerLink]="['/seeds']" class="button1 button-cart">ADD TO CART</a>
+  </div>
+</div>

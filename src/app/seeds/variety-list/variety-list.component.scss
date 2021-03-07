@@ -1,0 +1,80 @@
+a {
+  color: #000;
+  text-decoration: none;
+  :hover {
+    color: yellow;
+  }
+}
+
+.variety-card {
+  width: 344px;
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+  margin-bottom: 26px;
+}
+
+img {
+  max-width: 344px;
+}
+
+.card-title {
+  width: 100%;
+  background-color: green;
+  color: white;
+  padding: 1rem;
+  height: 6em;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+.card-info {
+  margin-top: -4px;
+  top: 4px;
+  width: 100%;
+  background-color: green;
+  color: white;
+  padding: 1rem;
+  height: 6em;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+a.button1 {
+  display: inline-block;
+  padding: 0.75rem 0.75rem;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+a.button-details {
+  color: white;
+  &:hover {
+    color :#000000;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid white;
+  }
+}
+
+a.button-cart {
+  border: 1px solid yellow;
+  color: yellow;
+  float: right;
+  &:hover {
+    color :#000000;
+    background-color: rgba(255, 255, 0, 0.8);
+    border: 1px solid yellow;
+  }
+}
