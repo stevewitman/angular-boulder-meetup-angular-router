@@ -15,4 +15,5 @@ export class VarietyListComponent implements OnInit {
   ngOnInit(): void {
     this.varieties = this.route.snapshot.data['varieties'];
   }
+
 }

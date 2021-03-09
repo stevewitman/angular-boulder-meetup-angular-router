@@ -4,7 +4,7 @@
   </div>
   <img src="assets/images/seeds/{{ variety.img_small }}" />
   <div class="card-info">
-    <a [routerLink]="['/seeds']" routerLinkActive="router-link-active"  class="button1 button-details">MORE DETAILS</a>
+    <a [routerLink]="['varieties', variety.seqNo]" routerLinkActive="router-link-active"  class="button1 button-details">MORE DETAILS</a>
     <a [routerLink]="['/seeds']" class="button1 button-cart">ADD TO CART</a>
   </div>
 </div>

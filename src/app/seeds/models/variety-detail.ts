@@ -1,5 +1,5 @@
-export interface VarietySummary {
-  id: string;
+export interface VarietyDetail {
+  id: number;
   variety: string;
   img_small: string;
   img_large: string;
@@ -10,4 +10,6 @@ export interface VarietySummary {
   light: string;
   description: string;
   price: string;
+  first: boolean;
+  last: boolean;
 }

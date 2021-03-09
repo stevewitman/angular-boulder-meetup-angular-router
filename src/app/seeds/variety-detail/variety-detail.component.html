@@ -1,1 +1,29 @@
-<p>variety-detail works!</p>
+<a class="back" href="javascript:void(0)" [routerLink]="['../..']">Back To Varieties List</a>
+
+<div class="row" *ngIf="(variety$ | async) as variety">
+  <div class="col-left">
+    <mat-icon class="arrow" *ngIf="!variety.first" (click)="previous(variety)">navigate_before</mat-icon>
+  </div>
+  <div class="col-middle">
+    <h1 class="title">{{ variety.variety | snakeToTitle }}</h1>
+    <h3>
+      Seed Count:<span class="thin">{{ variety.seed_count }}</span>
+    </h3>
+    <h3>
+      Days to Maturity:<span class="thin">{{ variety.days_to_maturity }}</span>
+    </h3>
+    <h3>
+      Light:<span class="thin">{{ variety.light }}</span>
+    </h3>
+    <h3>
+      Description:<span class="thin">{{ variety.description }}</span>
+    </h3>
+    <h3>
+      Price:<span class="thin">${{ variety.price }}</span>
+    </h3>
+    <img src="assets/images/seeds/{{ variety.img_small }}" />
+  </div>
+  <div class="col-right">
+    <mat-icon class="arrow" *ngIf="!variety.last" (click)="next(variety)">navigate_next</mat-icon>
+  </div>
+</div>

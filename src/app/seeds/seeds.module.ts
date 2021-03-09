@@ -9,10 +9,17 @@ import { CategoryVarietiesComponent } from './category-varieties/category-variet
 import { SharedModule } from '../shared/shared.module';
 import { VarietyListComponent } from './variety-list/variety-list.component';
 import { VarietyDetailComponent } from './variety-detail/variety-detail.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
-  declarations: [SeedsPageComponent, CategoriesCardListComponent, CategoryVarietiesComponent, VarietyListComponent, VarietyDetailComponent],
-  imports: [CommonModule, SeedsRoutingModule, SharedModule],
+  declarations: [
+    SeedsPageComponent,
+    CategoriesCardListComponent,
+    CategoryVarietiesComponent,
+    VarietyListComponent,
+    VarietyDetailComponent,
+  ],
+  imports: [CommonModule, SeedsRoutingModule, SharedModule, MatIconModule],
   exports: [SeedsPageComponent],
   providers: [SeedsService],
 })

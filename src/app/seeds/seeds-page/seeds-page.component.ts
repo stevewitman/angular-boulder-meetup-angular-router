@@ -23,11 +23,6 @@ export class SeedsPageComponent implements OnInit {
     this.reloadCategories();
   }
 
-  // reloadCourses() {
-  //   const courses$ = this.courses.loadAllCourses();
-  //   this.beginnerCourses$ = this.filterByCategory(courses$, 'BEGINNER');
-  //   this.advancedCourses$ = this.filterByCategory(courses$, 'ADVANCED');
-  // }
   reloadCategories() {
     const categories$ = this.seedsService.loadAllCategories();
     this.vegetableCategories$ = this.filterBySeedGroup(
@@ -35,11 +30,10 @@ export class SeedsPageComponent implements OnInit {
       'vegetable'
     );
   }
+
   filterBySeedGroup(categories$: Observable<Category[]>, seedGroup: string) {
     return this.loadingService
       .showLoaderUntilCompleted(categories$)
-      .pipe(tap((val) => console.log(`BEFORE MAP: ${val}`)))
-
       .pipe(
         map((categories) =>
           categories
@@ -47,17 +41,6 @@ export class SeedsPageComponent implements OnInit {
             .sort(sortCategoriesBySeqNo)
         )
       )
-      .pipe(tap((val) => console.log(`AFTER MAP: ${val}`)));
   }
-  // filterByCategory(courses$: Observable<Course[]>, category: string) {
-  //   return this.loading
-  //     .showLoaderUntilCompleted(courses$)
-  //     .pipe(
-  //       map((courses) =>
-  //         courses
-  //           .filter((course) => course.category == category)
-  //           .sort(sortCoursesBySeqNo)
-  //       )
-  //     );
-  // }
+
 }

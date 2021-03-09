@@ -6,8 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./categories-card-list.component.scss'],
 })
 export class CategoriesCardListComponent implements OnInit {
-  // @Input()
-  // courses: Category[] = [];
+
   @Input() categories: any;
   
   constructor() {}

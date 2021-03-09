@@ -4,9 +4,7 @@ import { Observable, of } from 'rxjs';
 import { map, shareReplay, tap } from 'rxjs/operators';
 import { Category } from '../models/category';
 import { VarietySummary } from '../models/variety-summary';
-// import { Course } from '../model/course';
-// import { LessonDetail } from '../model/lesson-detail';
-// import { LessonSummary } from '../model/lesson-summary';
+import { VarietyDetail } from '../models/variety-detail';
 
 @Injectable({
   providedIn: 'root',
@@ -16,14 +14,10 @@ export class SeedsService {
 
   loadAllCategories(): Observable<any> {
     console.log('LoadAllCategories ran');
-    return this.httpClient
-      .get<Category[]>('/api/categories')
-      .pipe(tap((val) => console.log(`BEFORE MAP: ${val}`)))
-      .pipe(
-        map((res) => res['payload']),
-        shareReplay()
-      )
-      .pipe(tap((val) => console.log(`AFTER MAP: ${val}`)));
+    return this.httpClient.get<Category[]>('/api/categories').pipe(
+      map((res) => res['payload']),
+      shareReplay()
+    );
   }
 
   loadCategoryByUrl(categoryUrl: string) {
@@ -48,4 +42,17 @@ export class SeedsService {
       );
   }
 
+  loadVarietyDetail(
+    categoryUrl: string,
+    varietySeqNo: string
+  ): Observable<VarietyDetail> {
+    return this.httpClient
+      .get<VarietyDetail>(`/api/variety-details`, {
+        params: {
+          categoryUrl,
+          varietySeqNo,
+        },
+      })
+      .pipe(shareReplay());
+  }
 }

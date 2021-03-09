@@ -211,17 +211,10 @@ export const USERS = {
   }
 };
 
-
-// export function findCourseById(courseId: number) {
-//   return COURSES[courseId];
-// }
 export function findCategoryById(categoryId: number) {
   return CATEGORIES[categoryId];
 }
 
-// export function findLessonsForCourse(courseId: number) {
-//   return Object.values(LESSONS).filter(lesson => lesson.courseId == courseId);
-// }
 export function findVarietiesForCategory(categoryId: number) {
   return Object.values(VARIETIES).filter(
     (variety) => variety.categoryId == categoryId
