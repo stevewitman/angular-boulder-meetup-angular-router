@@ -1,17 +1,36 @@
-<div class="header">
+<!-- 
+  routerLinkActive can be used for any link being active ... need to disable '' route to see result
+-->
+<div class="header" routerLinkActive="any-link-active">
   <a class="logo" [routerLink]="['home']">GARDENING</a>
   <nav>
     <ul class="nav-links">
+<!--
+  routerLink - basic notation (with absolute path): routerLink="/seeds"
+  routerLink - dynamically built expression (with absolute path): [routerLink]="['/seeds']"
+-->
       <li>
-        <a [routerLink]="['seeds']" routerLinkActive="router-link-active"
+        <a [routerLink]="['/seeds']" routerLinkActive="router-link-active"
           >SEEDS</a
         >
       </li>
+<!--
+      <li>
+        <a [routerLink]="['/videos']" routerLinkActive="router-link-active">VIDEOS</a>
+      </li>
+-->
       <li>
         <a [routerLink]="['/orders']" routerLinkActive="router-link-active"
           >ORDERS</a
         >
       </li>
+<!--
+  samples of a relative path (without the leading "/")
+      <li>
+        <a routerLink="about">ABOUT</a>
+        <a [routerLink]="['about']">ABOUT</a>
+      </li>
+-->
     </ul>
   </nav>
   <div class="nav-links">

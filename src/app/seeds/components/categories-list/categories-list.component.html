@@ -1,4 +1,5 @@
 <div class="category-card" *ngFor="let category of categories">
+  <!-- here I use category.url for the relative path segment -->
   <a [routerLink]="[category.url]">
     <img src="assets/images/seeds/{{ category.iconUrl }}" />
     <div class="card-title">

@@ -7,20 +7,24 @@ import { SigninComponent } from './core/components/signin/signin.component';
 import { AuthGuard } from './core/guards/auth.guard';
 
 const routes: Routes = [
+// pathMatch: 'full' needed for exact match of empty path
   {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full',
   },
+// eager loaded route
   {
     path: 'home',
     component: HomePageComponent,
   },
+// lazy loaded route
   {
     path: 'seeds',
     loadChildren: () =>
       import('./seeds/seeds.module').then((m) => m.SeedsModule),
   },
+// route with a route guard
   {
     path: 'orders',
     component: OrdersPageComponent,
@@ -30,6 +34,7 @@ const routes: Routes = [
     path: 'signin',
     component: SigninComponent,
   },
+// wildcard route always goes at the end of the routes array
   {
     path: '**',
     component: PageNotFoundComponent,

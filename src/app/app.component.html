@@ -1,6 +1,10 @@
 <app-header></app-header>
 <div class="main">
   <app-loading [ongoingRouting]="true"></app-loading>
-  <router-outlet></router-outlet>
+  <!--
+    <router-outlet> is a directive in the Router Module
+    that will display the component for the  matching route
+  -->
+  <router-outlet></router-outlet> 
 </div>
 <app-footer></app-footer>

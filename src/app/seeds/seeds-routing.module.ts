@@ -9,6 +9,7 @@ import { VarietyDetailComponent } from './components/variety-detail/variety-deta
 import { VarietyListComponent } from './components/variety-list/variety-list.component';
 
 const routes: Routes = [
+  // http://localhost:4200/seeds/carrots/3
   {
     path: '',
     component: SeedsPageComponent,
