@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { VarietyDetail } from '../models/variety-detail';
+import { VarietyDetail } from '../../models/variety-detail';
 
 @Component({
   selector: 'app-variety-detail',

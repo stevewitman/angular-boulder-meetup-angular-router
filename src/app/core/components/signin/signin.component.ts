@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
-import { AuthService } from '../services/auth.service';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'signin',
@@ -30,7 +30,7 @@ export class SigninComponent implements OnInit {
 
     this.authService.signin(val.email, val.password).subscribe(
       () => {
-        this.router.navigateByUrl('/courses');
+        this.router.navigateByUrl('/home');
       },
       (err) => {
         alert('Signin failed!');

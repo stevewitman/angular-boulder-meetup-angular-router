@@ -3,8 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './home/home-page/home.component';
 import { OrdersPageComponent } from './orders/orders-page/orders-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found/page-not-found.component';
-import { VideosPageComponent } from './videos/videos-page/videos-page.component';
-import { SigninComponent } from './core/signin/signin.component';
+import { SigninComponent } from './core/components/signin/signin.component';
 import { AuthGuard } from './core/guards/auth.guard';
 
 const routes: Routes = [
@@ -21,10 +20,6 @@ const routes: Routes = [
     path: 'seeds',
     loadChildren: () =>
       import('./seeds/seeds.module').then((m) => m.SeedsModule),
-  },
-  {
-    path: 'videos',
-    component: VideosPageComponent,
   },
   {
     path: 'orders',

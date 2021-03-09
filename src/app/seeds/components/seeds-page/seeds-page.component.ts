@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
-import { LoadingService } from 'src/app/shared/loading/loading.service';
-import { Category, sortCategoriesBySeqNo } from '../models/category';
-import { SeedsService } from '../services/seeds.service';
+import { LoadingService } from 'src/app/shared/components/loading/loading.service';
+import { Category, sortCategoriesBySeqNo } from '../../models/category';
+import { SeedsService } from '../../services/seeds.service';
 
 @Component({
   selector: 'app-seeds-page',

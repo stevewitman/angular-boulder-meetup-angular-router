@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CategoryVarietiesComponent } from './category-varieties/category-varieties.component';
-import { SeedsPageComponent } from './seeds-page/seeds-page.component';
+import { CategoryVarietiesComponent } from './components/category-varieties/category-varieties.component';
+import { SeedsPageComponent } from './components/seeds-page/seeds-page.component';
 import { CategoryResolver } from './services/category.resolver';
 import { VarietiesResolver } from './services/varieties.resolver';
 import { VarietyDetailResolver } from './services/variety-detail.resolver';
-import { VarietyDetailComponent } from './variety-detail/variety-detail.component';
-import { VarietyListComponent } from './variety-list/variety-list.component';
+import { VarietyDetailComponent } from './components/variety-detail/variety-detail.component';
+import { VarietyListComponent } from './components/variety-list/variety-list.component';
 
 const routes: Routes = [
   {

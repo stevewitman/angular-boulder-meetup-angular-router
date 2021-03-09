@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { VarietySummary } from '../models/variety-summary';
+import { VarietySummary } from '../../models/variety-summary';
 
 @Component({
   selector: 'app-variety-list',

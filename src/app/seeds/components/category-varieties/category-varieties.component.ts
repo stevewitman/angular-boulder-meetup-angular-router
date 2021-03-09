@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Category } from '../models/category';
+import { Category } from '../../models/category';
 
 @Component({
   selector: 'app-category-varieties',

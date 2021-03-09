@@ -6,3 +6,40 @@
 .section {
   padding-bottom: 20px;
 }
+.hero {
+height: 70vh;  background-image: url("../../../assets/images/garden.jpg"); /* The image used */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  position: relative;
+  border-radius: 10px;
+margin-top: 25px;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+a.button1 {
+  display: inline-block;
+  padding: 2rem 2rem;
+  border: 3px solid white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  text-align: center;
+  transition: all 0.2s;
+    color: white;
+
+}
+a.button-cta {
+  &:hover {
+    color :#000000;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 3px solid white;
+  }
+}
