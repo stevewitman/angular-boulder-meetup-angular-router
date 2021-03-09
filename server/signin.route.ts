@@ -1,12 +1,9 @@
 import {Request, Response} from 'express';
 import {authenticate} from "./db-data";
 
+export function signinUser(req: Request, res: Response) {
 
-
-
-export function loginUser(req: Request, res: Response) {
-
-  console.log("User login attempt ...");
+  console.log("User Sign In attempt ...");
 
   const {email, password} = req.body;
 

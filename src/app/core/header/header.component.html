@@ -2,10 +2,42 @@
   <a class="logo" [routerLink]="['home']">GARDENING</a>
   <nav>
     <ul class="nav-links">
-      <li><a [routerLink]="['seeds']" routerLinkActive="router-link-active">SEEDS</a></li>
-      <li><a [routerLink]="['videos']" routerLinkActive="router-link-active">VIDEOS</a></li>
-      <li><a [routerLink]="['/orders']" routerLinkActive="router-link-active">ORDERS</a></li>
+      <li>
+        <a [routerLink]="['seeds']" routerLinkActive="router-link-active"
+          >SEEDS</a
+        >
+      </li>
+      <li>
+        <a [routerLink]="['videos']" routerLinkActive="router-link-active"
+          >VIDEOS</a
+        >
+      </li>
+      <li>
+        <a [routerLink]="['/orders']" routerLinkActive="router-link-active"
+          >ORDERS</a
+        >
+      </li>
     </ul>
   </nav>
-  <a class="login" [routerLink]="['/seeds']" class="login">SIGN IN</a>
+  <div class="nav-links">
+    <a
+      class="signin"
+      [routerLink]="['/signin']"
+      routerLinkActive="router-link-active"
+      class="signin"
+      *ngIf="authService.isSignedOut$ | async"
+      >SIGN IN</a
+    >
+    <a
+      class="signin"
+      href=""
+      (click)="signout()"
+      *ngIf="authService.isSignedIn$ | async"
+    >
+      <ng-container *ngIf="authService.user$ | async as user">
+        <img class="avatar" [src]="user.pictureUrl" />
+      </ng-container>
+      <span>SIGN OUT</span>
+    </a>
+  </div>
 </div>

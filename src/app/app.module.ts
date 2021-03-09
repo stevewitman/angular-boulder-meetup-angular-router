@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,11 +10,8 @@ import { HomeModule } from './home/home.module';
 import { VideosModule } from './videos/videos.module';
 import { OrdersModule } from './orders/orders.module';
 import { PageNotFoundModule } from './page-not-found/page-not-found.module';
-import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { MatButtonModule } from '@angular/material/button';
+import { MaterialModule } from './shared/material/material.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -27,8 +26,7 @@ import { MatButtonModule } from '@angular/material/button';
     HttpClientModule,
     SharedModule,
     BrowserAnimationsModule,
-    MatProgressSpinnerModule,
-    MatButtonModule
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,28 @@
+<mat-card class="signin-page">
+  <mat-card-title>Sign In</mat-card-title>
+  <mat-card-content>
+    <form [formGroup]="form" class="signin-form">
+
+      <mat-form-field>
+
+        <input matInput type="email"
+               placeholder="Email"
+               formControlName="email">
+
+      </mat-form-field>
+
+      <mat-form-field>
+
+        <input matInput type="password"
+               placeholder="Password"
+               formControlName="password">
+
+      </mat-form-field>
+
+      <button mat-raised-button color="primary"
+              (click)="signin()"
+              [disabled]="!form.valid">Sign In</button>
+
+    </form>
+  </mat-card-content>
+</mat-card>

@@ -24,11 +24,9 @@ export class LoadingService {
 
   loadingOn() {
     this.loadingSubject.next(true);
-console.log('set loadingSubject to true');
   }
 
   loadingOff() {
     this.loadingSubject.next(false);
-console.log('set loadingSubject to false');
   }
 }

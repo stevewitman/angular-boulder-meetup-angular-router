@@ -13,7 +13,6 @@ export class SeedsService {
   constructor(private httpClient: HttpClient) {}
 
   loadAllCategories(): Observable<any> {
-    console.log('LoadAllCategories ran');
     return this.httpClient.get<Category[]>('/api/categories').pipe(
       map((res) => res['payload']),
       shareReplay()
